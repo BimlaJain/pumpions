@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 
 const OgPumpions = () => {
     return (
-        <div className='lg:pt-[183px] md:pt-[130px] pt-[66px]'>
+        <div id='team' className='lg:pt-[183px] md:pt-[130px] pt-[66px]'>
             <div className="container max-w-[1140px] mx-auto px-4">
                 <h2 className='text-[32px] font-normal pb-20 text-center text-white'>OG PUMPIONS</h2>
 

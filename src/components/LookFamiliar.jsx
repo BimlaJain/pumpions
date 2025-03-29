@@ -29,7 +29,7 @@ const LookFamiliar = () => {
                   ))}
               </Marquee>
           </div>
-          <div className='absolute bottom-[-8%] '>
+          <div className='absolute xl:bottom-[-8%] lg:bottom-[-6%] md:bottom-[-4%] bottom-[-2%] '>
               <Image src="/assets/images/png/look-layer.png" alt='look-layer' width={1440} height={147} />
   </div>
     </div>

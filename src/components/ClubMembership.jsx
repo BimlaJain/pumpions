@@ -9,7 +9,7 @@ import { CLUB_DATA, CLUB_DATA2 } from '@/utils/helper'
 
 const ClubMembership = () => {
     return (
-        <div className='bg-[#28424F] relative z-10 overflow-hidden'>
+        <div id='roadmap' className='bg-[#28424F] relative z-10 overflow-hidden'>
             <p className='font-normal text-xl text-white pb-5 text-center pt-24'>Community + Funding + Sunset</p>
             <h3 className='font-normal text-4xl text-white text-center pb-[144px]'>SUNSET CLUB MEMBERSHIP PERKS</h3>
 
@@ -20,7 +20,7 @@ const ClubMembership = () => {
                 <div className="block md:hidden w-full max-w-[366px]">
                     <Swiper
                         spaceBetween={20}
-                        slidesPerView={1.1}
+                        slidesPerView={1.8}
                         loop = {true}
                         pagination={{ clickable: true }}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}

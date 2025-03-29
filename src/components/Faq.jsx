@@ -20,7 +20,7 @@ const Faqs = () => {
     const faqs = new Array(5).fill("Aliquam eget libero vitae velit?");
 
     return (
-        <div className="text-black lg:pt-[141px] pt-[105px] pb-[78px]">
+        <div id="faq" className="text-black lg:pt-[141px] pt-[105px] pb-[78px]">
             <div className="container max-w-[1170px] mx-auto px-4">
                 <h2 className='text-[32px] font-normal pb-20 text-center text-white'>FAQ</h2>
             </div>

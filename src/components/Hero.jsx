@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-      <div className="bg-[url('/assets/images/png/hero-bg.png')] bg-cover bg-no-repeat bg-center lg:h-[853px] md:h-[641px] h-[388px] relative overflow-hidden">
+      <div id='home' className="bg-[url('/assets/images/png/hero-bg.png')] bg-cover bg-no-repeat bg-center lg:h-[853px] md:h-[641px] h-[388px] relative overflow-hidden">
           <Header />
           <div className='absolute lg:left-[1%] md:-left-[10%] -left-[35%] lg:top-[18%]'>
               <Image src="/assets/images/png/left-cloud.png" alt='left-cloud' width={166} height={85} />
