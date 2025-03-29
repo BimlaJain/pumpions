@@ -5,7 +5,7 @@ const Pumpmap = () => {
   return (
       <div className='lg:pt-[148px] pt-20'>
           <div className="container max-w-[1140px] mx-auto px-4">
-              <div className="flex max-lg:flex-wrap justify-between gap-12 items-center">
+              <div className="flex max-lg:flex-col-reverse justify-between gap-12 items-center">
                   <Image src="/assets/images/png/pumpmap.png" alt='pumpmap' width={407} height={374} className='max-md:w-full flex mx-auto' />
                   <div className="flex flex-col xl:max-w-[699px] lg:max-w-[550px] w-full max-lg:text-center">
                       <h2 className='text-4xl font-normal text-white pb-4'>PUMPMAP</h2>

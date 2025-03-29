@@ -3,9 +3,9 @@ import { OG_PUMPIONS_DATA } from '@/utils/helper';
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
-
-
+import 'swiper/css/pagination';
 
 const OgPumpions = () => {
     return (
@@ -13,17 +13,17 @@ const OgPumpions = () => {
             <div className="container max-w-[1140px] mx-auto px-4">
                 <h2 className='text-[32px] font-normal pb-20 text-center text-white'>OG PUMPIONS</h2>
 
-                {/* Swiper for small screens */}
                 <div className='block sm:hidden'>
                     <Swiper
                         spaceBetween={20}
                         slidesPerView={1.5}
-                        pagination
-                        autoplay
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        modules={[Pagination, Autoplay]}
                     >
                         {OG_PUMPIONS_DATA.map((item, i) => (
                             <SwiperSlide key={i}>
-                                <div className='text-center'>
+                                <div className='text-center max-sm:pb-16'>
                                     <Image src={item.img} alt={item.alt} width={item.width} height={item.height} className='w-[226px] h-[206px] mx-auto' />
                                     <h3 className='text-2xl font-normal leading-[202%] text-white pt-[31px]'>{item.title}</h3>
                                     <p className='text-base font-normal leading-[202%] text-white'>{item.work}</p>
@@ -52,8 +52,7 @@ const OgPumpions = () => {
                     ))}
                 </div>
 
-                {/* Button Section */}
-                <div className="bg-[url('/assets/images/png/Button-bg.png')] md:mt-[61px] w-[254px] h-[69px] bg-no-repeat flex mx-auto justify-center items-center">
+                <div className="bg-[url('/assets/images/png/Button-bg.png')] max-sm:mt-10 md:mt-[61px] w-[254px] h-[69px] bg-no-repeat flex mx-auto justify-center items-center">
                     WE ARE HIRING
                 </div>
             </div>

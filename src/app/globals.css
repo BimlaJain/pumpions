@@ -9,3 +9,12 @@ html , body{
   font-family: "press";
   src: url("/assets/fonts/PressStart2P.ttf");
 }
+
+.swiper-pagination-bullet-active{
+  background-color: white !important;
+}
+
+.swiper-pagination-bullet{
+  background-color: white !important;
+  opacity: 20;
+}
