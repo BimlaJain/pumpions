@@ -15,7 +15,7 @@ const ClubMembership = () => {
 
             <div className="flex max-lg:flex-wrap lg:justify-between justify-center items-center">
                 <div className='md:w-[892px] md:h-[381px] w-[366px] h-[181px] pl-4 max-md:pb-12 max-lg:px-4'>
-                    <Image src="/assets/images/png/sunsetclub.png" alt='sunset club' width={831} height={381} className='w-full h-full object-cover' />
+                    <Image src="/assets/images/png/sunsetclub.png" alt='sunset club' width={831} height={381} className='w-full h-full object-cover pointer-events-none' />
                 </div>
                 <div className="block md:hidden w-full max-w-[366px]">
                     <Swiper
@@ -43,7 +43,7 @@ const ClubMembership = () => {
                         {CLUB_DATA.map((item, i) => (
                             <div key={i} className='flex  gap-2 justify-between items-center overflow-hidden group'>
                                 <div className="flex w-[181px] h-[200px] flex-col justify-center p-6 items-center transition-all duration-500 ease-linear bg-[url('/assets/images/png/border.png')] bg-cover  group-hover:bg-[url('/assets/images/png/border-orange.png')] bg-no-repeat">
-                                    <Image src={item.img} alt={item.alt} width={item.width} height={item.height} />
+                                    <Image src={item.img} alt={item.alt} width={item.width} height={item.height} className='pointer-events-none'/>
                                     <h3 className='text-xs font-normal pt-[18px] text-center group-hover:text-white'>{item.title}</h3>
                                     <p className='text-[6px] leading-[204%] font-normal pt-1 text-center group-hover:text-white'>{item.discription}</p>
                                 </div>
@@ -54,7 +54,7 @@ const ClubMembership = () => {
                         {CLUB_DATA2.map((item, i) => (
                             <div key={i} className='flex  gap-2 justify-between items-center overflow-hidden group '>
                                 <div className="flex w-[181px] h-[200px] flex-col justify-center p-6 items-center transition-all duration-500 ease-linear bg-[url('/assets/images/png/border.png')] group-hover:bg-[url('/assets/images/png/border-orange.png')] bg-cover bg-no-repeat">
-                                    <Image src={item.img} alt={item.alt} width={item.width} height={item.height} />
+                                    <Image src={item.img} alt={item.alt} width={item.width} height={item.height} className='pointer-events-none' />
                                     <h3 className='text-xs font-normal pt-[18px] text-center group-hover:text-white'>{item.title}</h3>
                                     <p className='text-[6px] leading-[204%] font-normal pt-1 text-center group-hover:text-white'>{item.discription}</p>
                                 </div>

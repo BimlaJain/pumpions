@@ -45,7 +45,7 @@ const OgPumpions = () => {
                 <div className='hidden sm:flex flex-wrap lg:justify-between max-sm:gap-8 items-center justify-center'>
                     {OG_PUMPIONS_DATA.map((item, i) => (
                         <div key={i} className={`max-lg:mb-12 ${i % 2 === 0 ? 'max-lg:mr-[141px] max-md:mr-0' : 'max-lg:mr-0'}`}>
-                            <Image src={item.img} alt={item.alt} width={item.width} height={item.height} className='w-[226px] h-[206px]' />
+                            <Image src={item.img} alt={item.alt} width={item.width} height={item.height} className='w-[226px] h-[206px] pointer-events-none' />
                             <h3 className='text-2xl font-normal leading-[202%] text-white text-center pt-[31px]'>{item.title}</h3>
                             <p className='text-base font-normal leading-[202%] text-white text-center'>{item.work}</p>
                             <div className="flex gap-[11px] mx-auto justify-center items-center pt-4">
