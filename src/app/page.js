@@ -1,5 +1,6 @@
 
 import ClubMembership from '@/components/ClubMembership'
+import BackToTop from '@/components/common/BackToTop'
 import Faqs from '@/components/Faq'
 import Footer from '@/components/Footer'
 import Hero from '@/components/Hero'
@@ -19,7 +20,8 @@ const page = () => {
       <Pumpmap />
       <OgPumpions />
       <Faqs />
-      <Footer/>
+      <Footer />
+      <BackToTop/>
     </div>
   )
 }
