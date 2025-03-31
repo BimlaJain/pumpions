@@ -30,10 +30,10 @@ const OgPumpions = () => {
                                     <p className='text-base font-normal leading-[202%] text-white'>{item.work}</p>
                                     <div className="flex gap-[11px] justify-center items-center pt-4">
                                         <Link href="https://discord.com/">
-                                            <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
+                                            <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                         </Link>
                                         <Link href="https://x.com/?lang=en">
-                                            <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                            <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                         </Link>
                                     </div>
                                 </div>
@@ -50,10 +50,10 @@ const OgPumpions = () => {
                             <p className='text-base font-normal leading-[202%] text-white text-center'>{item.work}</p>
                             <div className="flex gap-[11px] mx-auto justify-center items-center pt-4">
                                 <Link href="https://discord.com/">
-                                    <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
+                                    <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                 </Link>
                                 <Link href="https://x.com/?lang=en">
-                                    <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                    <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                 </Link>
                             </div>
                         </div>

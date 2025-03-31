@@ -14,7 +14,7 @@ const Header = () => {
         <>
             <div className={`z-40  left-0 w-full transition-all duration-300 pt-[30px] px-4 `}>
                 <div className=" container w-[1140px] mx-auto bg-[url('/assets/images/png/header-bg.png')] max-sm:h-[45px] max-lg:h-[76px] w-full bg-cover bg-no-repeat">
-                    <div className={`lg:px-[64px] px-10 max-lg:pl-14 max-sm:pl-10  md:pt-5 pt-2 md:pb-4 flex items-center justify-between`}>
+                    <div className={`lg:px-[64px] px-10 max-lg:pl-14 max-sm:pl-10  lg:pt-5 pt-4 md:pb-4 flex items-center justify-between`}>
                         <div className="flex gap-[18px]">
                             <Link href="/">
                                 <Image width={41} height={47} src="/assets/images/png/logo.png" alt="logo" className="max-sm:w-[27px] max-sm:h-[31px]" />
@@ -36,7 +36,7 @@ const Header = () => {
                         <div className="flex gap-6 max-lg:hidden">
                             {SOCIAL_LINKS.map((link, index) => (
                                 <Link key={index} href={link.link}>
-                                    <Image src={link.icon} alt={link.alt} width={35} height={35} />
+                                    <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                 </Link>
                             ))}
                         </div>
@@ -59,7 +59,7 @@ const Header = () => {
                     <div className="flex flex-row gap-6 ">
                         {SOCIAL_LINKS.map((link, index) => (
                             <Link key={index} href={link.link} >
-                                <Image src={link.icon} alt={link.alt} width={35} height={35} className="mb-3" />
+                                <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear mb-3" />
                             </Link>
                         ))}
                     </div>

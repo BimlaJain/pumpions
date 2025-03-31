@@ -15,7 +15,7 @@ const Footer = () => {
                   {FOOTER_SOCIAL_ICONS.map((item, i) => (
                       <div key={i}>
                           <Link href={item.link}>
-                              <Image src={item.icon} alt={item.alt} width={35} height={35} /></Link>
+                              <Image src={item.icon} alt={item.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" /></Link>
                       </div>
                   ))}
              </div>
