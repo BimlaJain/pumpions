@@ -7,11 +7,11 @@ const BackToTop = () => {
     const scrollHandler = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
-    const setHendler = () => {
+    const clickHandler = () => {
         setScrollToTop(window.scrollY > 500);
     };
     useEffect(() => {
-        window.addEventListener("scroll", setHendler);
+        window.addEventListener("scroll", clickHandler);
     });
 
     return (

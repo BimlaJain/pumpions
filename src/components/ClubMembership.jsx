@@ -11,11 +11,11 @@ const ClubMembership = () => {
     return (
         <div id='roadmap' className='bg-[#28424F] max-sm:-mt-[54px] relative z-10 overflow-hidden max-w-[1440px] mx-auto'>
             <p className='font-normal md:text-xl text-base text-white pb-5 text-center pt-24'>Community + Funding + Sunset</p>
-            <h3 className='font-normal lg:text-4xl text-2xl text-white text-center lg:pb-[125px] pb-8'>SUNSET CLUB MEMBERSHIP PERKS</h3>
+            <h3 className='font-normal lg:text-4xl text-2xl text-white text-center lg:pb-[125px] pb-8 leading-[204%]'>SUNSET CLUB MEMBERSHIP PERKS</h3>
 
-            <div className="flex max-lg:flex-wrap lg:justify-between justify-center items-center">
+            <div className="flex max-lg:flex-wrap lg:justify-between justify-center lg:gap-10 items-center">
                 <div className='md:w-[892px] md:h-[381px] w-[366px] h-[181px] pl-4 max-md:pb-12 max-lg:px-4'>
-                    <Image src="/assets/images/png/sunsetclub.png" alt='sunset club' width={831} height={381} className='w-full h-full object-cover pointer-events-none' />
+                    <Image src="/assets/images/png/sunsetclub.png" alt='sunset club' width={831} height={381} className='w-full h-full pointer-events-none' />
                 </div>
                 <div className="block md:hidden w-full max-w-[366px]">
                     <Swiper

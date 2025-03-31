@@ -14,8 +14,8 @@ const LookFamiliar = () => {
           <div className="overflow-hidden py-[14px] pb-[30px] max-w-[1920px] mx-auto text-sm  relative">
               <Marquee gradient={false} speed={30} pauseOnHover>
                   {SLIDER_DATA.map((item, index) => (
-                      <div key={index} className=" mr-6 flex items-center w-[175px] h-[193px]">
-                         <Image  src={item.img} alt={item.alt} width={175} height={193} className='w-[175px] h-[193px]' />
+                      <div key={index} className=" mr-6 flex items-center md:w-[175px] md:h-[193px] w-[107px] h-[118px]">
+                          <Image src={item.img} alt="slider-image" width={175} height={193} className='md:w-[175px] md:h-[193px] w-[107px] h-[118px]' />
                       </div>
                   ))}
               </Marquee>
@@ -23,8 +23,8 @@ const LookFamiliar = () => {
           <div className="overflow-hidden py-[14px] max-w-[1920px] mx-auto text-smrelative mb-24">
               <Marquee gradient={false} direction='right' speed={30} pauseOnHover>
                   {SLIDER_DATA2.map((item, index) => (
-                      <div key={index} className=" mr-6 flex items-center w-[175px] h-[193px]">
-                          <Image src={item.img} alt={item.alt} width={175} height={193} className='w-[175px] h-[193px]' />
+                      <div key={index} className=" mr-6 flex items-center md:w-[175px] md:h-[193px] w-[107px] h-[118px]">
+                          <Image src={item.img} alt="slider-image" width={175} height={193} className='md:w-[175px] md:h-[193px] w-[107px] h-[118px]' />
                       </div>
                   ))}
               </Marquee>

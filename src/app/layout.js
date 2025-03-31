@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` uppercase antialiased bg-[#28424F]`}
+        className={` uppercase bg-[#28424F]`}
       >
         {children}
       </body>

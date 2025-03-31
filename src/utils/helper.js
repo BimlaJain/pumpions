@@ -31,43 +31,33 @@ export const SOCIAL_LINKS = [
 export const SLIDER_DATA = [
     {
         img: "/assets/images/png/purple-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/pink-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/purple2-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/badge-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightpink-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightpurple-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/skin-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightgreen-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/sky-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/skin2-pumpion.png",
-        alt: "slider-image"
     },
 
 ];
@@ -75,43 +65,33 @@ export const SLIDER_DATA = [
 export const SLIDER_DATA2 = [
     {
         img: "/assets/images/png/lightpurple-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/pink-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/purple2-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/badge-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightpink-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightpurple-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/sand-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/lightgreen-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/sky-pumpion.png",
-        alt: "slider-image"
     },
     {
         img: "/assets/images/png/skin2-pumpion.png",
-        alt: "slider-image"
     },
 
 ];

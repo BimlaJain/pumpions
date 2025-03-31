@@ -1,4 +1,3 @@
-
 import ClubMembership from '@/components/ClubMembership'
 import BackToTop from '@/components/common/BackToTop'
 import Faqs from '@/components/Faq'

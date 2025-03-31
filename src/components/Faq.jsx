@@ -42,7 +42,7 @@ const Faqs = () => {
                             className="overflow-hidden transition-all duration-500 ease-in-out relative z-10"
                             style={{ maxHeight: "0px" }}
                         >
-                            <p className="md:mt-6 mt-4 font-normal max-w-[992px] md:text-base text-sm text-white">
+                            <p className="md:mt-6 mt-4 font-normal max-w-[992px] md:text-sm text-xs text-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo nobis, sapiente quas repellat saepe molestias suscipit vitae excepturi optio magni quam tenetur doloribus eum consectetur. Sed, ea? Iure, in.
                             </p>
                         </div>

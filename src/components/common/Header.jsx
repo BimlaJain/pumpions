@@ -12,12 +12,12 @@ const Header = () => {
 
     return (
         <>
-            <div className={`z-40  left-0 w-full transition-all duration-300 pt-[30px] px-4 `}>
+            <div className={`z-40  left-0 w-full transition-all duration-300 lg:pt-[30px] pt-5 px-4 `}>
                 <div className=" container max-w-[1140px] relative mx-auto  max-sm:h-[45px] max-lg:h-[76px] w-full bg-cover bg-no-repeat">
                     <Image src="/assets/images/png/header-bg.png" width={10000}
                         height={76.19}
                         className="min-h-[76.19px] absolute w-full max-md:min-h-[56px]" alt="header img"/>
-                    <div className={`lg:px-[64px] px-10 max-lg:pl-14 max-sm:pl-10 2xl:pb-6 2xl:pt-[16px]  lg:pt-4 pt-3 md:pb-4 flex items-center justify-between`}>
+                    <div className={`lg:px-[64px] md:px-10 px-6 max-lg:pl-14  max-sm:pl-7 2xl:pb-6 2xl:pt-[16px]  lg:pt-4 pt-3 md:pb-4 flex items-center justify-between`}>
                         <div className="flex gap-[18px]">
                             <Link href="/">
                                 <Image width={41} height={47} src="/assets/images/png/logo.png" alt="logo" className="max-sm:w-[27px] max-sm:h-[31px] relative z-10" />
@@ -27,8 +27,7 @@ const Header = () => {
                                     <li key={i}>
                                         <Link
                                             href={item.link}
-                                            className={`font-normal text-base relative transition-all duration-500 after:content-[''] after:absolute after:left-0 after:top-[19px] after:w-full after:h-[5px] after:bg-[#FFEC37] after:scale-x-0 hover:after:scale-x-100 after:origin-left`}
-
+                                            className={`font-normal text-base relative transition-all duration-500 after:content-[''] after:absolute after:left-0 after:top-[19px] after:w-full after:h-[5px] after:bg-[#FFEC37] after:scale-x-0 hover:after:scale-x-100 after:origin-center after:transition-transform after:duration-500`}
                                         >
                                             {item.title}
                                         </Link>
@@ -36,10 +35,10 @@ const Header = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex gap-6 max-lg:hidden relative z-10">
+                        <div className="flex gap-[11px] max-lg:hidden relative z-10">
                             {SOCIAL_LINKS.map((link, index) => (
-                                <Link key={index} href={link.link}>
-                                    <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
+                                <Link key={index} href={link.link} target="_blank">
+                                    <Image  src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
                                 </Link>
                             ))}
                         </div>
@@ -61,7 +60,7 @@ const Header = () => {
                     ))}
                     <div className="flex flex-row gap-6 ">
                         {SOCIAL_LINKS.map((link, index) => (
-                            <Link key={index} href={link.link} >
+                            <Link key={index} href={link.link} target="_blank" >
                                 <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear mb-3" />
                             </Link>
                         ))}
