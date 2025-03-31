@@ -34,7 +34,7 @@ const Header = () => {
                         </div>
                         <div className="flex gap-6 max-lg:hidden">
                             {SOCIAL_LINKS.map((link, index) => (
-                                <Link key={index} href={link.href}>
+                                <Link key={index} href={link.link}>
                                     <Image src={link.src} alt={link.alt} width={35} height={35} />
                                 </Link>
                             ))}
@@ -57,7 +57,7 @@ const Header = () => {
                     ))}
                     <div className="flex flex-row gap-6 ">
                         {SOCIAL_LINKS.map((link, index) => (
-                            <Link key={index} href={link.href} >
+                            <Link key={index} href={link.link} >
                                 <Image src={link.src} alt={link.alt} width={35} height={35} className="mb-3" />
                             </Link>
                         ))}

@@ -2,6 +2,7 @@
 import { OG_PUMPIONS_DATA } from '@/utils/helper';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -28,8 +29,12 @@ const OgPumpions = () => {
                                     <h3 className='text-2xl font-normal leading-[202%] text-white pt-[31px]'>{item.title}</h3>
                                     <p className='text-base font-normal leading-[202%] text-white'>{item.work}</p>
                                     <div className="flex gap-[11px] justify-center items-center pt-4">
-                                        <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
-                                        <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                        <Link href="https://discord.com/">
+                                            <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
+                                        </Link>
+                                        <Link href="https://x.com/?lang=en">
+                                            <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                        </Link>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -44,8 +49,12 @@ const OgPumpions = () => {
                             <h3 className='text-2xl font-normal leading-[202%] text-white text-center pt-[31px]'>{item.title}</h3>
                             <p className='text-base font-normal leading-[202%] text-white text-center'>{item.work}</p>
                             <div className="flex gap-[11px] mx-auto justify-center items-center pt-4">
-                                <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
-                                <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                <Link href="https://discord.com/">
+                                    <Image src="/assets/images/svg/orange-discord.svg" alt='discord' width={35} height={35} />
+                                </Link>
+                                <Link href="https://x.com/?lang=en">
+                                    <Image src="/assets/images/svg/orange-twitter.svg" alt='twitter' width={35} height={35} />
+                                </Link>
                             </div>
                         </div>
                     ))}
