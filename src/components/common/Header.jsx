@@ -13,11 +13,14 @@ const Header = () => {
     return (
         <>
             <div className={`z-40  left-0 w-full transition-all duration-300 pt-[30px] px-4 `}>
-                <div className=" container w-[1140px] mx-auto bg-[url('/assets/images/png/header-bg.png')] max-sm:h-[45px] max-lg:h-[76px] w-full bg-cover bg-no-repeat">
-                    <div className={`lg:px-[64px] px-10 max-lg:pl-14 max-sm:pl-10 2xl:pb-6 2xl:pt-[26px]  lg:pt-5 pt-2 md:pb-4 flex items-center justify-between`}>
+                <div className=" container max-w-[1140px] relative mx-auto  max-sm:h-[45px] max-lg:h-[76px] w-full bg-cover bg-no-repeat">
+                    <Image src="/assets/images/png/header-bg.png" width={10000}
+                        height={76.19}
+                        className="min-h-[76.19px] absolute w-full max-md:min-h-[56px]" alt="header img"/>
+                    <div className={`lg:px-[64px] px-10 max-lg:pl-14 max-sm:pl-10 2xl:pb-6 2xl:pt-[16px]  lg:pt-4 pt-3 md:pb-4 flex items-center justify-between`}>
                         <div className="flex gap-[18px]">
                             <Link href="/">
-                                <Image width={41} height={47} src="/assets/images/png/logo.png" alt="logo" className="max-sm:w-[27px] max-sm:h-[31px]" />
+                                <Image width={41} height={47} src="/assets/images/png/logo.png" alt="logo" className="max-sm:w-[27px] max-sm:h-[31px] relative z-10" />
                             </Link>
                             <ul className="flex items-center gap-8 max-lg:hidden">
                                 {HEADER_LIST.map((item, i) => (
@@ -33,7 +36,7 @@ const Header = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="flex gap-6 max-lg:hidden">
+                        <div className="flex gap-6 max-lg:hidden relative z-10">
                             {SOCIAL_LINKS.map((link, index) => (
                                 <Link key={index} href={link.link}>
                                     <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear" />
