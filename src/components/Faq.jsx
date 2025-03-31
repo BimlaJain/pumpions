@@ -33,7 +33,7 @@ const Faqs = () => {
                             className="relative w-full text-left md:text-base md:pl-10 pl-0 max-lg:pt-1 pt-[5px] max-sm:pt-0 cursor-pointer text-[9px] font-semibold flex justify-between items-center uppercase z-10"
                         >
                             {question}
-                            <span className="md:text-2xl text-sm flex justify-center items-center font-normal max-sm:size-[19px] size-[41px] cursor-pointer text-white bg-gradient-to-b from-[#E8770E] to-[#FCA32B] rounded-full md:px-3 md:py-2 px-1">
+                            <span className="md:text-2xl text-sm flex justify-center items-center font-normal max-sm:size-[19px] size-[41px] cursor-pointer text-white bg-gradient-to-b from-[#E8770E] to-[#FCA32B] rounded-full md:px-3 md:py-2  px-1">
                                 {openIndex === index ? "-" : "+"}
                             </span>
                         </button>
@@ -42,7 +42,7 @@ const Faqs = () => {
                             className="overflow-hidden transition-all duration-500 ease-in-out relative z-10"
                             style={{ maxHeight: "0px" }}
                         >
-                            <p className="md:mt-6 mt-4 font-normal max-w-[992px] md:text-sm text-xs text-white">
+                            <p className="md:mt-6 mt-4 font-normal max-w-[992px] md:text-sm text-[6px] text-white">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui explicabo nobis, sapiente quas repellat saepe molestias suscipit vitae excepturi optio magni quam tenetur doloribus eum consectetur. Sed, ea? Iure, in.
                             </p>
                         </div>

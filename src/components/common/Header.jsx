@@ -60,7 +60,7 @@ const Header = () => {
                     ))}
                     <div className="flex flex-row gap-6 ">
                         {SOCIAL_LINKS.map((link, index) => (
-                            <Link key={index} href={link.link} target="_blank" >
+                            <Link onClick={() => setOpen(false)} key={index} href={link.link} target="_blank" >
                                 <Image src={link.icon} alt={link.alt} width={35} height={35} className="hover:scale-110 transition-all duration-500 ease-linear mb-3" />
                             </Link>
                         ))}

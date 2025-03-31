@@ -60,7 +60,7 @@ const OgPumpions = () => {
                     ))}
                 </div>
 
-                <div className="bg-[url('/assets/images/png/button-bg.png')] md:text-base cursor-pointer hover:scale-110 transition-all duration-500 ease-linear text-xs bg-cover mt-[58px] w-[254px] max-sm:w-[190px] max-sm:h-[51px] h-[69px] bg-no repeat flex mx-auto justify-center items-center">
+                <div className="bg-[url('/assets/images/png/button-border.png')] md:text-base cursor-pointer hover:scale-110 transition-all duration-500 ease-linear text-xs bg-cover mt-[58px] w-[254px] max-sm:w-[190px] max-sm:h-[51px] h-[69px] bg-no repeat flex mx-auto justify-center items-center">
                     WE ARE HIRING
                 </div>
             </div>

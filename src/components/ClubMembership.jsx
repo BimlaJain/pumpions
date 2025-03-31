@@ -20,15 +20,15 @@ const ClubMembership = () => {
                 <div className="block md:hidden w-full max-w-[366px]">
                     <Swiper
                         spaceBetween={20}
-                        slidesPerView={1.8}
+                        slidesPerView={1.2}
                         loop = {true}
                         pagination={{ clickable: true }}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
                         modules={[Pagination, Autoplay]}
                     >
                         {[...CLUB_DATA, ...CLUB_DATA2].map((item, i) => (
-                            <SwiperSlide key={i} className='!w-[181px] mb-12'>
-                                <div className="flex !w-[181px] h-[200px] flex-col justify-center p-6 items-center bg-[url('/assets/images/png/border.png')] bg-cover bg-no-repeat group">
+                            <SwiperSlide key={i} className='!w-[181px]   mb-12'>
+                                <div className="flex !w-[181px] h-[200px] flex-col justify-center p-6 items-center bg-[url('/assets/images/png/border.png')]  bg-cover bg-no-repeat group">
                                     <Image src={item.img} alt={item.alt} width={item.width} height={item.height} />
                                     <h3 className='text-xs font-normal pt-[18px] text-center group-hover:text-white'>{item.title}</h3>
                                     <p className='text-[6px] leading-[204%] font-normal pt-1 text-center group-hover:text-white'>{item.discription}</p>

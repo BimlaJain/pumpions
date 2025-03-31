@@ -137,7 +137,7 @@ export const CLUB_DATA2 = [
 export const OG_PUMPIONS_DATA = [
     {
         img: "/assets/images/png/skin-pumpion.png",
-        alt: "miguel",
+        alt: "Miguel",
         width: 226,
         height: 208,
         title: "Miguel",
