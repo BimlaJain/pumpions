@@ -9,7 +9,7 @@ import { CLUB_DATA, CLUB_DATA2 } from '@/utils/helper'
 
 const ClubMembership = () => {
     return (
-        <div id='roadmap' className='bg-[#28424F] max-sm:-mt-[54px] relative z-10 overflow-hidden max-w-[1920px]'>
+        <div id='roadmap' className='bg-[#28424F] max-sm:-mt-[54px] relative z-10 overflow-hidden max-w-[1440px] mx-auto'>
             <p className='font-normal md:text-xl text-base text-white pb-5 text-center pt-24'>Community + Funding + Sunset</p>
             <h3 className='font-normal lg:text-4xl text-2xl text-white text-center lg:pb-[125px] pb-8'>SUNSET CLUB MEMBERSHIP PERKS</h3>
 
