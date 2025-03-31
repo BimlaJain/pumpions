@@ -23,9 +23,9 @@ export const HEADER_LIST = [
 ];
 
 export const SOCIAL_LINKS = [
-    { link: "https://discord.com/", src: "/assets/images/svg/discord.svg", alt: "discord" },
-    { link: "https://x.com/?lang=en", src: "/assets/images/svg/twitter.svg", alt: "twitter" },
-    { link: "https://magiceden.io/", src: "/assets/images/svg/magic-eden.svg", alt: "magic-eden" },
+    { link: "https://discord.com/", icon: "/assets/images/svg/discord.svg", alt: "discord" },
+    { link: "https://x.com/?lang=en", icon: "/assets/images/svg/twitter.svg", alt: "twitter" },
+    { link: "https://magiceden.io/", icon: "/assets/images/svg/magic-eden.svg", alt: "magic-eden" },
 ];
 
 export const SLIDER_DATA = [
