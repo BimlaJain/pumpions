@@ -55,9 +55,9 @@ const Header = () => {
                             {item.title}
                         </a>
                     ))}
-                    <div className="flex flex-row gap-6 max-lg:block">
+                    <div className="flex flex-row gap-6 ">
                         {SOCIAL_LINKS.map((link, index) => (
-                            <Link key={index} href={link.href}>
+                            <Link key={index} href={link.href} >
                                 <Image src={link.src} alt={link.alt} width={35} height={35} className="mb-3" />
                             </Link>
                         ))}
