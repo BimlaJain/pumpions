@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HEADER_LIST , SOCIAL_LINKS} from "../../utils/helper";
+import { HEADER_LIST, SOCIAL_LINKS } from "../../utils/helper";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -24,7 +24,8 @@ const Header = () => {
                                     <li key={i}>
                                         <Link
                                             href={item.link}
-                                            className={`font-normal text-base hover:underline transition-all duration-300`}
+                                            className={`font-normal text-base relative transition-all duration-500 after:content-[''] after:absolute after:left-0 after:top-[19px] after:w-full after:h-[5px] after:bg-[#FFEC37] after:scale-x-0 hover:after:scale-x-100 after:origin-left`}
+
                                         >
                                             {item.title}
                                         </Link>
