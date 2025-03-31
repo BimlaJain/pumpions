@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { HEADER_LIST} from "../../utils/helper";
+import { HEADER_LIST , SOCIAL_LINKS} from "../../utils/helper";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,15 +33,11 @@ const Header = () => {
                             </ul>
                         </div>
                         <div className="flex gap-6 max-lg:hidden">
-                            <Link href="/">
-                                <Image src="/assets/images/svg/discord.svg" alt="discord" width={35} height={35}/>
-                            </Link>
-                            <Link href="/">
-                                <Image src="/assets/images/svg/twitter.svg" alt="discord" width={35} height={35} />
-                            </Link>
-                            <Link href="/">
-                                <Image src="/assets/images/svg/magic-eden.svg" alt="discord" width={35} height={35} />
-                            </Link>
+                            {SOCIAL_LINKS.map((link, index) => (
+                                <Link key={index} href={link.href}>
+                                    <Image src={link.src} alt={link.alt} width={35} height={35} />
+                                </Link>
+                            ))}
                         </div>
                         <div className="lg:hidden z-50 cursor-pointer" onClick={() => setOpen(!open)}>
                             <button className="overflow-hidden relative z-50 lg:hidden size-[30px] h-5 flex flex-col justify-between items-center">
@@ -59,16 +55,12 @@ const Header = () => {
                             {item.title}
                         </a>
                     ))}
-                    <div className="flex gap-6 max-lg:block">
-                        <Link href="/">
-                            <Image src="/assets/images/svg/discord.svg" alt="discord" width={35} height={35} />
-                        </Link>
-                        <Link href="/">
-                            <Image src="/assets/images/svg/twitter.svg" alt="discord" width={35} height={35} />
-                        </Link>
-                        <Link href="/">
-                            <Image src="/assets/images/svg/magic-eden.svg" alt="discord" width={35} height={35} />
-                        </Link>
+                    <div className="flex flex-row gap-6 max-lg:block">
+                        {SOCIAL_LINKS.map((link, index) => (
+                            <Link key={index} href={link.href}>
+                                <Image src={link.src} alt={link.alt} width={35} height={35} className="mb-3" />
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>

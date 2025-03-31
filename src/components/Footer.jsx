@@ -14,7 +14,8 @@ const Footer = () => {
               <div className="flex gap-[11px] mx-auto justify-center pt-6">
                   {FOOTER_SOCIAL_ICONS.map((item, i) => (
                       <div key={i}>
-                          <Image src={item.icon} alt={item.alt} width={35} height={35} />
+                          <Link href={item.link}>
+                              <Image src={item.icon} alt={item.alt} width={35} height={35} /></Link>
                       </div>
                   ))}
              </div>

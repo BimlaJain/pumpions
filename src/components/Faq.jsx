@@ -20,9 +20,9 @@ const Faqs = () => {
     const faqs = new Array(5).fill("Aliquam eget libero vitae velit?");
 
     return (
-        <div id="faq" className="text-black lg:pt-[141px] pt-[105px] pb-[78px]">
+        <div id="faq" className="text-black lg:pt-[141px] pt-[105px] lg:pb-[78px] pb-3">
             <div className="container max-w-[1170px] mx-auto px-4">
-                <h2 className='text-[32px] font-normal pb-20 text-center text-white'>FAQ</h2>
+                <h2 className='lg:text-[32px] text-2xl font-normal md:pb-20 pb-4 text-center text-white'>FAQ</h2>
             </div>
             <div className="container max-w-[1170px] mx-auto px-4">
                 {faqs.map((question, index) => (

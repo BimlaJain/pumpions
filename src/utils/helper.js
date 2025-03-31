@@ -21,6 +21,13 @@ export const HEADER_LIST = [
     },
 
 ];
+
+export const SOCIAL_LINKS = [
+    { href: "/", src: "/assets/images/svg/discord.svg", alt: "discord" },
+    { href: "/", src: "/assets/images/svg/twitter.svg", alt: "twitter" },
+    { href: "/", src: "/assets/images/svg/magic-eden.svg", alt: "magic-eden" },
+];
+
 export const SLIDER_DATA = [
     {
         img: "/assets/images/png/purple-pumpion.png",
@@ -185,14 +192,17 @@ export const OG_PUMPIONS_DATA = [
 export const FOOTER_SOCIAL_ICONS = [
     {
         icon: "/assets/images/svg/footer-discord.svg",
-        alt: "discord"
+        alt: "discord",
+        link: "https://discord.com/"
     },
     {
         icon: "/assets/images/svg/footer-twitter.svg",
-        alt: "twiter"
+        alt: "twiter",
+        link: "https://x.com/?lang=en"
     },
     {
         icon: "/assets/images/svg/footer-magic.svg",
-        alt: "magic"
+        alt: "magic",
+        link: "https://magiceden.io/"
     }
 ]

@@ -6,10 +6,10 @@ import Image from 'next/image';
 
 const LookFamiliar = () => {
   return (
-      <div className="bg-[url('/assets/images/png/look-bg.png')] bg-[#203948] bg-cover bg-no-repeat -mt-[140px] pb-[100px] relative">
+      <div className="bg-[url('/assets/images/png/look-bg.png')] bg-[#203948] bg-cover bg-no-repeat -mt-[140px] lg:pb-[100px] pb-3 relative">
           <div className="container max-w-[1140px] mx-auto px-4">
-              <p className='font-normal text-xl text-white pb-5 text-center  pt-32'>PEAK AT THE SUNSET</p>
-              <h3 className='font-normal text-4xl text-white text-center pb-[102px]'>THEY SURE LOOK FAMILIAR </h3>
+              <p className='font-normal lg:text-xl text-base text-white md:pb-5 pb-3 text-center  pt-32'>PEAK AT THE SUNSET</p>
+              <h3 className='font-normal lg:text-4xl leading-[204%] text-2xl text-white text-center lg:pb-[102px] md:pb-[85px] pb-12'>THEY SURE LOOK FAMILIAR </h3>
           </div>
           <div className="overflow-hidden py-[14px] pb-[30px] max-w-[1920px] mx-auto text-sm  relative">
               <Marquee gradient={false} speed={30} pauseOnHover>
@@ -29,8 +29,8 @@ const LookFamiliar = () => {
                   ))}
               </Marquee>
           </div>
-          <div className='absolute xl:bottom-[-8%] lg:bottom-[-6%] md:bottom-[-4%] bottom-[-2%] '>
-              <Image src="/assets/images/png/look-layer.png" alt='look-layer' width={1440} height={147} />
+          <div className='absolute xl:bottom-[-8%] lg:bottom-[-6%] md:bottom-[-5%] bottom-[4%] '>
+              <Image src="/assets/images/png/look-layer.png" alt='look-layer' width={1440} height={147}  />
   </div>
     </div>
   )

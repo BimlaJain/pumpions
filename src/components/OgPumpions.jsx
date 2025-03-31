@@ -11,7 +11,7 @@ const OgPumpions = () => {
     return (
         <div id='team' className='lg:pt-[183px] md:pt-[130px] pt-[66px]'>
             <div className="container max-w-[1140px] mx-auto px-4">
-                <h2 className='text-[32px] font-normal pb-20 text-center text-white'>OG PUMPIONS</h2>
+                <h2 className='lg:text-[32px] text-2xl font-normal lg:pb-20 md:pb-[75px] pb-[30px] text-center text-white'>OG PUMPIONS</h2>
 
                 <div className='block sm:hidden'>
                     <Swiper
@@ -37,7 +37,6 @@ const OgPumpions = () => {
                     </Swiper>
                 </div>
 
-                {/* Static Grid for larger screens */}
                 <div className='hidden sm:flex flex-wrap lg:justify-between max-sm:gap-8 items-center justify-center'>
                     {OG_PUMPIONS_DATA.map((item, i) => (
                         <div key={i} className={`max-lg:mb-12 ${i % 2 === 0 ? 'max-lg:mr-[141px] max-md:mr-0' : 'max-lg:mr-0'}`}>
@@ -52,7 +51,7 @@ const OgPumpions = () => {
                     ))}
                 </div>
 
-                <div className="bg-[url('/assets/images/png/Button-bg.png')] max-sm:mt-10 md:mt-[61px] w-[254px] h-[69px] bg-no-repeat flex mx-auto justify-center items-center">
+                <div className="bg-[url('/assets/images/png/Button-bg.png')] max-sm:mt-7 md:mt-[61px] w-[254px] h-[69px] bg-no-repeat flex mx-auto justify-center items-center">
                     WE ARE HIRING
                 </div>
             </div>
